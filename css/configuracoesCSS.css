@@ -1,0 +1,39 @@
+/***
+body {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/congruent_pentagon.png');
+}
+***/
+
+.pattern-colorida {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/congruent_pentagon.png');
+}
+
+.sem-background {
+    background-color: transparent;
+}
+
+.blur-pattern {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/congruent_pentagon.png');
+    filter: blur(5px);
+}
+
+.letra-clara {
+    color: #ececec;
+}
+
+.letra-escura {
+    color: #828282;
+}
+
+.letra-titulo {
+    font-size: 60px;
+    margin-top: -20px;   
+}
+
+.margem-lateral {
+    margin: 5px;
+}
+
+a:active, a:hover {
+    text-decoration: none;
+}
