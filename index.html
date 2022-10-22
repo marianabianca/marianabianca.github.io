@@ -1,160 +1,104 @@
-<html>
-    <head>
-        <title>Presentation page</title>
-        
-        <meta charset="UTF-8">
-        
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
-    
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        
-        
-        <link href="css/configuracoesCSS.css" rel="stylesheet">
-    </head>
-    
-    <body>
-        
-        <div class="jumbotron jumbotron-fluid sem-background">
-          <div class="container text-center">
-            <img src="imagens/welcome-arco-iris.png" style="max-width: 50%; height: auto; margin-top: -10px;">
-            <p class="lead" style="margin-top: 20px;">to my personal presentation page:</p>
-          </div>
+  <title>Mariana Dela-Bianca</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
+</head>
+<body>
+    <header>
+      <a href="#" class="link cabecalho-titulo">Mariana Dela-Bianca</a>
+      <nav class="container direcao-horizontal centralizado-horizontal">
+        <a href="#sobre" class="link cabecalho-links">Sobre mim</a>
+        <a href="#sobre" class="link cabecalho-links">Currículo</a>
+        <a href="#projetos" class="link cabecalho-links">Projetos</a>
+      </nav>
+    </header>
+
+    <div class="pagina container centralizado-vertical centralizado-horizontal">
+      <img src="assets/ilustracao.png" class="ilustracao"/>
+      <div class="container direcao-vertical">
+        <h1>Hello, world! Me chamo Mariana!</h1>
+        <p>
+          Sou bacharela em ciência da computação pela Universidade Federal de Campina Grande (UFCG).
+          Sou engenheira de software, já trabalhei com front-end e back-end.
+          No momento, estou no segundo ano do meu mestrado, também na UFCG. Meu tema é relacionado a mulheres na computação, 
+          e analiso dados do curso de ciência da computação da UFCG para entender melhor o desempenho dos estudantes e suas trajetórias.
+          Planejo retornar ao mercado de trabalho em 2023.
+        </p>
+        <div class="container direcao-horizontal">
+          <a target="_blank" href="https://github.com/marianabianca">
+            <button class="link botao-quadrado github">
+              <img src="assets/github.png" />
+            </button>
+          </a>
+          <a target="_blank" href="https://br.linkedin.com/in/marianadelabianca">
+            <button class="link botao-quadrado linkedin">
+              <img src="assets/linkedin.png" />
+            </button>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/mariana.inventa/">
+            <button class="link botao-quadrado instagram">
+              <img src="assets/instagram.png" />
+            </button>
+          </a>
         </div>
+        <a target="_blank" href="mailto:maridbianca@gmail.com">
+          <button class="link botao-retangulo primario">Contato</button>
+        </a>
+      </div>
+    </div>
 
-        <div class="jumbotron jumbotron-fluid" style="background-color: #709150; margin-top: -50px;">
-          <div class="container">
-              <h1 class="display-3 text-center letra-clara letra-titulo">About me</h1>
-              <div class="row" style="margin-top: 30px;">
-                  <div class="col-4 text-right">
-                      <img src="imagens/minha-foto.jpg" alt="..." class="img-thumbnail" style="max-width: 250px; max-height: 250px;">
-                  </div>
-                  <div class="col-6 text-left letra-clara" style="margin-top: 15px;">
-                      <p>Name: Mariana</p>
-                      <p>Last name: Marques dos Santos Dela-Bianca</p>
-                      <p>Date of birth: 7th of january 1998</p>
-                      <p>What do I study: Computer Science</p>
-                      <p>Where do I study: Federal University of Campina Grande</p>
-                      <p>Paraíba, Brazil</p>
-                  </div>
-              </div>
-          </div>
-        </div>
+    <div id="sobre" data-aos="fade-right" class="pagina cinza container centralizado-vertical centralizado-horizontal">
+      <div class="container direcao-vertical">
+        <h1>Sobre mim</h1>
+        <p>
+          Durante o curso de <b>ciência da computação</b> na UFCG, fui monitora de uma disciplina, e também participei de alguns projetos de pesquisa e desenvolvimento.
+          Nesses projetos estudei sobre segurança, trabalhei com <b>frontend</b>, utilizando <b>React JS</b>, e também <b>backend</b>, utilizando <b>Flask</b> e <b>Node JS</b>.
+          Após me graduar, trabalhei com <b>backend</b> durante um ano em uma <b>plataforma de ecommerce</b>.
+          Agora estou no <b>mestrado</b> de ciência da computação na UFCG, e estou envolvida com a parte de <b>análise de dados descritiva</b>.
+          Já participei de duas edições da Olimpíada Paraibana de Informática durante a minha graduação, e na última edição fui premiada com <b>medalha de prata</b>.
+          Tenho 24 anos, me chamo <b>Mariana Dela-Bianca</b>, nasci na Paraíba, e amo ser nordestina. No meu tempo livre brinco com meus pets, canto, danço, faço tricô e crochê!
+        </p>
+        <h2>Currículo</h2>
+        <a href="https://drive.google.com/drive/folders/17pYl7ds4ZxjFPFK-iuuyReHan383NPa0?usp=sharing" target="_blank">
+            <button class="link botao-retangulo primario">Download</button>
+        </a>
+      </div>
+      <img src="assets/perfil.png" class="perfil"/>
+    </div>
 
-        <div class="jumbotron jumbotron-fluid" style="background-color: #b73d43; margin-top: -50px;">
-          <div class="container">
-              <h1 class="display-3 text-center letra-clara letra-titulo">Things I have experience with</h1>
-              <div class="row justify-content-md-center" style="margin-top: 30px;">
-                  <h4>
-                    <span class="badge badge-primary">Java</span>
-                    <span class="badge badge-secondary">Python</span>
-                    <span class="badge badge-success">AngularJS</span>
-                    <span class="badge badge-danger">CSS</span>
-                    <span class="badge badge-info">OOP</span>
-                    <span class="badge badge-dark">Spring Framework</span>
-                    <span class="badge badge-warning">GitHub</span>
-                    <span class="badge badge-light">Android</span>
-                  </h4>
-              </div>
-          </div>
-        </div>
+    <div id="projetos" data-aos="fade-left" class="pagina pagina-h90 container centralizado-vertical centralizado-horizontal direcao-vertical">
+      <h1>Projetos</h1>
+      <div class="container centralizado-horizontal centralizado-vertical direcao-horizontal">
+        <div class="repo-card github-cards" data-repo="marianabianca/hall-das-placas-virtual"></div>
+        <div class="repo-card github-cards" data-repo="marianabianca/pomodoro"></div>
+      </div>
+    </div>
 
-        <div class="jumbotron jumbotron-fluid" style="background-color: #4b386d; margin-top: -50px;">
-          <div class="container">
-              <h1 class="display-3 text-center letra-clara letra-titulo">Things I like to do</h1>
-              <div class="row justify-content-md-center" style="margin-top: 30px;">
-                  <h4>
-                    <span class="badge badge-dark">Painting</span>
-                    <span class="badge badge-secondary">Playing guitar</span>
-                    <span class="badge badge-success">Singing</span>
-                    <span class="badge badge-danger">Discovering things</span>
-                    <span class="badge badge-info">Solving problems</span>
-                    <span class="badge badge-warning">Playing with my dog</span>
-                    <span class="badge badge-light">Creating new things</span>
-                    <span class="badge badge-primary">Reading</span>
-                  </h4>
-              </div>
-          </div>
-        </div>
+    <footer class="cinza container direcao-vertical centralizado-vertical centralizado-horizontal">
+      <a class="link" target="_blank" href="https://storyset.com/">
+        Ilustrações por Storyset by Freepik
+      </a>
+      <a class="link" target="_blank" href="https://github.com/Tarptaeya/repo-card">
+        Cards de repositório do GitHub por Tarptaeya
+      </a>
+      <a class="link" target="_blank" href="https://github.com/michalsnik/aos">
+        Animações por Michalsnik
+      </a>
+    </footer>
 
-        <div class="jumbotron jumbotron-fluid" style="background-color: #6b6b6b; margin-top: -50px;">
-          <div class="container">
-              <h1 class="display-3 text-center letra-clara letra-titulo">Projects I have worked on</h1>
-              <div class="row justify-content-md-center" style="margin-top: 30px;">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-                <a href="https://github.com/marianabianca/pomodoro">
-                    <div class="card text-white bg-success mb-3 margem-lateral" style="max-width: 20rem;">
-                      <div class="card-header">Python</div>
-                      <div class="card-body">
-                        <h4 class="card-title">Pomodoro</h4>
-                        <p class="card-text">A pomodoro timer which works in the terminal. Programmed in Python.</p>
-                      </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/GugaRibeiro/gauss-s-law-app">
-                    <div class="card text-white bg-danger mb-3 margem-lateral" style="max-width: 20rem;">
-                      <div class="card-header">Android</div>
-                      <div class="card-body">
-                        <h4 class="card-title">Gauss's Law App</h4>
-                        <p class="card-text">An Android app that helps physics students to learn the Gauss's Law.</p>
-                      </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/marianabianca/music-library">
-                    <div class="card text-white bg-warning mb-3 margem-lateral" style="max-width: 20rem;">
-                      <div class="card-header">WEB</div>
-                      <div class="card-body">
-                        <h4 class="card-title">Music library</h4>
-                        <p class="card-text">A website where you can add artists, musics and create playlists.</p>
-                      </div>
-                    </div>
-                </a>
-
-              </div>
-          </div>
-        </div>
-
-        <div class="jumbotron jumbotron-fluid" style="background-color: #fff; margin-top: -50px;">
-          <div class="container">
-              <h1 class="display-3 text-center letra-escura letra-titulo">Where you can find me</h1>
-              <div class="row justify-content-md-center" style="margin-top: 30px;">
-                  <h4>
-                    <a href="https://github.com/marianabianca">
-                        <span class="badge badge-dark">GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/marianadelabianca/">
-                        <span class="badge badge-primary">LinkedIn</span>
-                    </a>
-                    <a href="https://jujubaverde.deviantart.com/">
-                        <span class="badge badge-success">DeviantArt</span>
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maridbianca@gmail.com">
-                        <span class="badge badge-danger">Gmail</span>
-                    </a>
-                    <a href="https://www.facebook.com/mariana.marques.9678067">
-                        <span class="badge badge-info">Facebook</span>
-                    </a>
-                  </h4>
-              </div>
-          </div>
-        </div>
-
-	
-        <div class="jumbotron jumbotron-fluid barra-creditos">
-          <div class="container">
-              <div class="row justify-content-md-center" style="margin-top: 30px;">
-                  <a href="https://github.com/marianabianca">Template by Mariana and</a> 
-		  <a href="http://getbootstrap.com.br/">&nbspcomponents by Bootstrap.</a>
-              </div>
-          </div>
-        </div>
-        
-    </body>
-
+</body>
 </html>
